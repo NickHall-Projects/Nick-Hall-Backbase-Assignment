@@ -6,10 +6,14 @@
   - Cucumber
   - Pico Contianer for dependency injection
   - Maven
+  - Surefire
   - Junit
 
 # Execution
 >This framework has been written using the Chrome browser, although it does include the MS Edge driver, but has not been tested. The browser to use can be specified from the command libe using Maven, or if executed via the RunTest class, the default browser is Chrome as specified in the following menu. **Run->Edit Configuration->Environment Variable**
+
+If the test are executed from Maven using mvn, Surefire will produce execution reports in the follwoing directory;
+**target\Destination**
 
 Tests can be executed by:
 1. Clicking run on the RunTests class
