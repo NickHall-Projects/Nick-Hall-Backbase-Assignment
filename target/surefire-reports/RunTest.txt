@@ -1,0 +1,50 @@
+-------------------------------------------------------------------------------
+Test set: RunTest
+-------------------------------------------------------------------------------
+Tests run: 148, Failures: 2, Errors: 8, Skipped: 2, Time elapsed: 318.622 s <<< FAILURE! - in RunTest
+Then I can see the computer in the list(| I4 | Test Computer3!"£$%^&*()_+=-{}][~@:;'#?><,./\ |  |  | Apple Inc. |)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No items in the table to check
+
+| I4 | Test Computer3!"£$%^&*()_+=-{}][~@:;'#?><,./\ |  |  | Apple Inc. |  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: No items in the table to check
+
+Then the block is highlighted caused by the 'Introduced date'(| I12 | !"£$%^&*()_+=-{}][~@:;'#?><,./\ | 0000-01-15 |  | IBM | Introduced date |)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+| I12 | !"£$%^&*()_+=-{}][~@:;'#?><,./\ | 0000-01-15 |  | IBM | Introduced date |  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+Then the block is highlighted caused by the 'Discontinued date'(| I13 | !"£$%^&*()_+=-{}][~@:;'#?><,./\ |  | 0000-02-15 | IBM | Discontinued date |)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+
+| I13 | !"£$%^&*()_+=-{}][~@:;'#?><,./\ |  | 0000-02-15 | IBM | Discontinued date |  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+
+Then the block is highlighted caused by the 'Introduced date'(| E10 | Acer Extensa | Acer Extensa | 0000-03-15 |  | Apple Inc. | Introduced date |)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+| E10 | Acer Extensa | Acer Extensa | 0000-03-15 |  | Apple Inc. | Introduced date |  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+When I edit an existing entry(| E11 | Acorn System 2 | Amiga 1000 |  | 0000-03-15 | Apple Inc. | Discontinued date |)  Time elapsed: 0 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-PDRP7FP', ip: '192.168.0.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Nick\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 94d13010da84eabc9b5557dd9500699f
+
+| E11 | Acorn System 2 | Amiga 1000 |  | 0000-03-15 | Apple Inc. | Discontinued date |  Time elapsed: 0.001 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-PDRP7FP', ip: '192.168.0.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Nick\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 94d13010da84eabc9b5557dd9500699f
+
