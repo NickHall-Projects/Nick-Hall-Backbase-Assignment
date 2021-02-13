@@ -1,4 +1,3 @@
-//import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -7,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         format = {"pretty", "html:target/Destination"},
         features = {"classpath:features"},
-        tags = {"@Regression"},
+        tags = {"@wip"},
         glue = {"classpath:common","stepdefs"}
 )
 

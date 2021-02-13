@@ -3,13 +3,17 @@ package stepdefs;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import gherkin.formatter.model.DataTableRow;
 import org.junit.Assert;
 import pages.AddScreen;
 import pages.EditScreen;
 import pages.FirstScreen;
 import pages.SharedObjects;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Stream;
 
 public class EditStepDefs {
 
@@ -31,6 +35,12 @@ public class EditStepDefs {
 
     @When("^I edit an existing entry$")
     public void i_edit_an_existing_entry(DataTable table) throws Throwable {
+        Map<String,String> mymap = new HashMap<String, String>();
+
+        for (DataTableRow row : table.getGherkinRows()) {
+            mymap.put(row.getCells().get(0), row.getCells().get(1));
+        }
+        String x = mymap.get("Computer-Name");
 
         List<List<String>> data = table.raw();
 

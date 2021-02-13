@@ -1,4 +1,4 @@
-@Regression
+@wip
 Feature: Load and edit an entry but do not commit changes
   As a user I want to be able to perform CRUD actions on the computer database
 

@@ -149,7 +149,7 @@
                         <include>RunTest.java</include>
                     </includes>
                     <environmentVariables>
-                        <browserName>Chrome</browserName>
+                        <browserName>edge</browserName>
                     </environmentVariables>
                 </configuration>
             </plugin>

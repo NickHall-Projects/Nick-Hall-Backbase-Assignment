@@ -9,6 +9,7 @@ import org.junit.Assert;
 import pages.*;
 
 import java.util.List;
+import java.util.Map;
 
 public class FirstScreenStepDefs {
 
@@ -39,6 +40,8 @@ public class FirstScreenStepDefs {
     @When("^I add a new computer$")
     public void i_add_a_new_computer(DataTable table) throws Throwable {
         List<List<String>> data = table.raw();
+
+        List<Map<String,String>> row = table.asMaps(String.class, String.class);
 
         firstScreen.AddANewComputerbtn().click();
 
